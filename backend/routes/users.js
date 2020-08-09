@@ -9,7 +9,7 @@ router.route("/").get((req, res) => {
     // errors will have a 400 status
     .catch((err) => res.status(400).json("Error: " + err));
 });
-
+// this will give us our add
 router.route("/add").post((req, res) => {
   const username = req.body.username;
 

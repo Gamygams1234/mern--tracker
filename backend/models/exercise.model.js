@@ -26,5 +26,5 @@ const exerciseSchema = new Schema(
 );
 
 // it will look for blogs in the model, second one is what type of schema, which we just created
-const Exercise = mongoose.model("Exercize", exerciseSchema);
+const Exercise = mongoose.model("Exercise", exerciseSchema);
 module.exports = Exercise;
