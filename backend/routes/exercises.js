@@ -25,13 +25,13 @@ router.route("/add").post((req, res) => {
     .then(() => res.json("Exercise added!"))
     .catch((err) => res.status(400).json("Error: " + err));
 });
-
+//this is finding by id
 router.route("/:id").get((req, res) => {
   Exercise.findById(req.params.id)
     .then((exercise) => res.json(exercise))
     .catch((err) => res.status(400).json("Error: " + err));
 });
-
+// this is deleting by id
 router.route("/:id").delete((req, res) => {
   Exercise.findByIdAndDelete(req.params.id)
     .then(() => res.json("Exercise deleted."))
